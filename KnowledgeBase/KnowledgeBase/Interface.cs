@@ -45,7 +45,7 @@ namespace KnowledgeBase
                 this.description = value;
             }
         }
-        private string solution
+        public string solution
         {
             get
             {
@@ -56,5 +56,28 @@ namespace KnowledgeBase
                 this.solution = value;
             }
         }
+        public string username
+        {
+            get
+            {
+                return this.username;
+            }
+            set
+            {
+                this.solution = value;
+            }
+        }
+        public string password
+        {
+            get
+            {
+                return this.password;
+            }
+            set
+            {
+                this.password = value;
+            }
+        }
+
     }
 }

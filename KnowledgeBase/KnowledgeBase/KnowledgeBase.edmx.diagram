@@ -7,8 +7,8 @@
       <Diagram DiagramId="cb26ac674df843248857e8b788f23874" Name="Diagram1">
         <EntityTypeShape EntityType="KnowledgeBaseModel.Administrator" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="KnowledgeBaseModel.Developer" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.Table" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.UnverifiedReport" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.Table" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.UnverifiedReport" Width="1.5" PointX="2.75" PointY="2.625" IsExpanded="true" />
         <EntityTypeShape EntityType="KnowledgeBaseModel.VerifiedReport" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

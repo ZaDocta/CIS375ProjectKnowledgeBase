@@ -5,11 +5,12 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="cb26ac674df843248857e8b788f23874" Name="Diagram1">
-        <EntityTypeShape EntityType="KnowledgeBaseModel.Administrator" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.Developer" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.Table" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.UnverifiedReport" Width="1.5" PointX="2.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="KnowledgeBaseModel.VerifiedReport" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.Keyword" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.Administrator" Width="1.5" PointX="0.5" PointY="2" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.Developer" Width="1.5" PointX="2.375" PointY="2.375" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.SolvedReport" Width="1.5" PointX="4.25" PointY="0.5" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.UnverifiedReport" Width="1.5" PointX="4.25" PointY="2.5" />
+        <EntityTypeShape EntityType="KnowledgeBaseModel.VerifiedReport" Width="1.5" PointX="2.375" PointY="0.5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

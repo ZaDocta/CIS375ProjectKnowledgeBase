@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KnowledgeBaseModelStoreContainer" CdmEntityContainer="KnowledgeBaseEntities">
+    <EntitySetMapping Name="Keywords">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.Keyword">
+        <MappingFragment StoreEntitySet="Keywords">
+          <ScalarProperty Name="word" ColumnName="word" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Administrators">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.Administrator">
+        <MappingFragment StoreEntitySet="Administrators">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Developers">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.Developer">
+        <MappingFragment StoreEntitySet="Developers">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SolvedReports">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.SolvedReport">
+        <MappingFragment StoreEntitySet="SolvedReports">
+          <ScalarProperty Name="solution" ColumnName="solution" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="software_version" ColumnName="software_version" />
+          <ScalarProperty Name="error_code" ColumnName="error_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnverifiedReports">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.UnverifiedReport">
+        <MappingFragment StoreEntitySet="UnverifiedReports">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="software_version" ColumnName="software_version" />
+          <ScalarProperty Name="error_code" ColumnName="error_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VerifiedReports">
+      <EntityTypeMapping TypeName="KnowledgeBaseModel.VerifiedReport">
+        <MappingFragment StoreEntitySet="VerifiedReports">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="software_version" ColumnName="software_version" />
+          <ScalarProperty Name="error_code" ColumnName="error_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

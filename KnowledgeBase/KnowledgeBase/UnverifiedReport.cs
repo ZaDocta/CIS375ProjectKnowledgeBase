@@ -14,8 +14,7 @@ namespace KnowledgeBase
     
     public partial class UnverifiedReport
     {
-        public int Id { get; set; }
-        public Nullable<int> error_code { get; set; }
+        public int error_code { get; set; }
         public string software_version { get; set; }
         public string description { get; set; }
     }

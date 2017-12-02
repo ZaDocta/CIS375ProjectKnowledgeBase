@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KnowledgeBaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="KnowledgeBaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Keywords" EntityType="KnowledgeBaseModel.Keyword" />
+    <EntitySet Name="Administrators" EntityType="KnowledgeBaseModel.Administrator" />
+    <EntitySet Name="Developers" EntityType="KnowledgeBaseModel.Developer" />
+    <EntitySet Name="SolvedReports" EntityType="KnowledgeBaseModel.SolvedReport" />
+    <EntitySet Name="UnverifiedReports" EntityType="KnowledgeBaseModel.UnverifiedReport" />
+    <EntitySet Name="VerifiedReports" EntityType="KnowledgeBaseModel.VerifiedReport" />
+  </EntityContainer>
+  <EntityType Name="Keyword">
+    <Key>
+      <PropertyRef Name="word" />
+    </Key>
+    <Property Name="word" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Administrator">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Developer">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SolvedReport">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="Int32" Nullable="false" />
+    <Property Name="software_version" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="solution" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UnverifiedReport">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="Int32" Nullable="false" />
+    <Property Name="software_version" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VerifiedReport">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="Int32" Nullable="false" />
+    <Property Name="software_version" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

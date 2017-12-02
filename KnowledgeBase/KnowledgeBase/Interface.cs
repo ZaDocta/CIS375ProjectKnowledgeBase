@@ -8,9 +8,10 @@ namespace KnowledgeBase
 {
     public class Interface
     {
+        public User currentUser;
         public Interface()
         {
-            //default constructor
+            currentUser = new User();
         }
         public string error_code
         {
@@ -56,28 +57,14 @@ namespace KnowledgeBase
                 this.solution = value;
             }
         }
-        public string username
+        
+        public void setUsername(string inp)
         {
-            get
-            {
-                return this.username;
-            }
-            set
-            {
-                this.solution = value;
-            }
+            this.currentUser.username = inp;
         }
-        public string password
+        public void setPassword(string inp)
         {
-            get
-            {
-                return this.password;
-            }
-            set
-            {
-                this.password = value;
-            }
+            this.currentUser.password = inp;
         }
-
     }
 }

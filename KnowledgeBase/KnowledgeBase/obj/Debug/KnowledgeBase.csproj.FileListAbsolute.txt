@@ -7,3 +7,9 @@ C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowle
 C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\obj\Debug\KnowledgeBase.csproj.GenerateResource.Cache
 C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\obj\Debug\KnowledgeBase.exe
 C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\obj\Debug\KnowledgeBase.pdb
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\KnowledgeBase.mdf
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\KnowledgeBase_log.ldf
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\EntityFramework.dll
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\EntityFramework.xml
+C:\Users\Eric\Documents\School\U-M\CIS\375\CIS375TermProject\CIS375ProjectKnowledgeBase\KnowledgeBase\KnowledgeBase\bin\Debug\EntityFramework.SqlServer.xml

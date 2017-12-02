@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KnowledgeBaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Administrators">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Developers">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Keywords">
+    <Key>
+      <PropertyRef Name="word" />
+    </Key>
+    <Property Name="word" Type="nvarchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SolvedReports">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="int" Nullable="false" />
+    <Property Name="software_version" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="solution" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnverifiedReports">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="int" Nullable="false" />
+    <Property Name="software_version" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VerifiedReports">
+    <Key>
+      <PropertyRef Name="error_code" />
+    </Key>
+    <Property Name="error_code" Type="int" Nullable="false" />
+    <Property Name="software_version" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="KnowledgeBaseModelStoreContainer">
+    <EntitySet Name="Administrators" EntityType="Self.Administrators" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Developers" EntityType="Self.Developers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Keywords" EntityType="Self.Keywords" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SolvedReports" EntityType="Self.SolvedReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnverifiedReports" EntityType="Self.UnverifiedReports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VerifiedReports" EntityType="Self.VerifiedReports" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -25,9 +25,10 @@ namespace KnowledgeBase
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Keyword> Keywords { get; set; }
         public virtual DbSet<Administrator> Administrators { get; set; }
         public virtual DbSet<Developer> Developers { get; set; }
-        public virtual DbSet<Table> Tables { get; set; }
+        public virtual DbSet<SolvedReport> SolvedReports { get; set; }
         public virtual DbSet<UnverifiedReport> UnverifiedReports { get; set; }
         public virtual DbSet<VerifiedReport> VerifiedReports { get; set; }
     }

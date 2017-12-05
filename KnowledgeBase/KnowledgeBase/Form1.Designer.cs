@@ -48,6 +48,7 @@
             this.enterPasswordBox = new System.Windows.Forms.TextBox();
             this.enterUsernameBox = new System.Windows.Forms.TextBox();
             this.adminTab = new System.Windows.Forms.TabPage();
+            this.adminDeleteButton = new System.Windows.Forms.Button();
             this.adminNarrator = new System.Windows.Forms.Label();
             this.adminSubmitButton = new System.Windows.Forms.Button();
             this.adminSearchButton = new System.Windows.Forms.Button();
@@ -59,18 +60,19 @@
             this.adminErrorCodeLabel = new System.Windows.Forms.Label();
             this.adminEnterErrorCodeBox = new System.Windows.Forms.TextBox();
             this.devTab = new System.Windows.Forms.TabPage();
+            this.devDeleteButton = new System.Windows.Forms.Button();
+            this.devNarrator = new System.Windows.Forms.Label();
+            this.devSubmitButton = new System.Windows.Forms.Button();
+            this.devSearchButton = new System.Windows.Forms.Button();
+            this.devVerifiedGridView = new System.Windows.Forms.DataGridView();
+            this.devEnterSolLabel = new System.Windows.Forms.Label();
+            this.devEnterSolutionBox = new System.Windows.Forms.TextBox();
+            this.devEnterDescLabel = new System.Windows.Forms.Label();
+            this.devEnterSVLabel = new System.Windows.Forms.Label();
+            this.devEnterECLabel = new System.Windows.Forms.Label();
             this.devEnterDescriptionBox = new System.Windows.Forms.TextBox();
             this.devEnterVersionBox = new System.Windows.Forms.TextBox();
             this.devEnterErrorCodeBox = new System.Windows.Forms.TextBox();
-            this.devEnterECLabel = new System.Windows.Forms.Label();
-            this.devEnterSVLabel = new System.Windows.Forms.Label();
-            this.devEnterDescLabel = new System.Windows.Forms.Label();
-            this.devEnterSolutionBox = new System.Windows.Forms.TextBox();
-            this.devEnterSolLabel = new System.Windows.Forms.Label();
-            this.devVerifiedGridView = new System.Windows.Forms.DataGridView();
-            this.devSearchButton = new System.Windows.Forms.Button();
-            this.devSubmitButton = new System.Windows.Forms.Button();
-            this.devNarrator = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.userTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userSolvedGridView)).BeginInit();
@@ -125,7 +127,7 @@
             // userNarrator
             // 
             this.userNarrator.AutoSize = true;
-            this.userNarrator.Location = new System.Drawing.Point(3, 139);
+            this.userNarrator.Location = new System.Drawing.Point(10, 216);
             this.userNarrator.Name = "userNarrator";
             this.userNarrator.Size = new System.Drawing.Size(35, 13);
             this.userNarrator.TabIndex = 9;
@@ -134,7 +136,7 @@
             // userSubmitButton
             // 
             this.userSubmitButton.Enabled = false;
-            this.userSubmitButton.Location = new System.Drawing.Point(640, 235);
+            this.userSubmitButton.Location = new System.Drawing.Point(103, 123);
             this.userSubmitButton.Name = "userSubmitButton";
             this.userSubmitButton.Size = new System.Drawing.Size(75, 23);
             this.userSubmitButton.TabIndex = 8;
@@ -269,6 +271,7 @@
             // 
             // adminTab
             // 
+            this.adminTab.Controls.Add(this.adminDeleteButton);
             this.adminTab.Controls.Add(this.adminNarrator);
             this.adminTab.Controls.Add(this.adminSubmitButton);
             this.adminTab.Controls.Add(this.adminSearchButton);
@@ -286,10 +289,21 @@
             this.adminTab.Text = "Administrator Verification";
             this.adminTab.UseVisualStyleBackColor = true;
             // 
+            // adminDeleteButton
+            // 
+            this.adminDeleteButton.Enabled = false;
+            this.adminDeleteButton.Location = new System.Drawing.Point(100, 155);
+            this.adminDeleteButton.Name = "adminDeleteButton";
+            this.adminDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.adminDeleteButton.TabIndex = 10;
+            this.adminDeleteButton.Text = "Delete";
+            this.adminDeleteButton.UseVisualStyleBackColor = true;
+            this.adminDeleteButton.Click += new System.EventHandler(this.adminDeleteButton_Click);
+            // 
             // adminNarrator
             // 
             this.adminNarrator.AutoSize = true;
-            this.adminNarrator.Location = new System.Drawing.Point(7, 141);
+            this.adminNarrator.Location = new System.Drawing.Point(4, 218);
             this.adminNarrator.Name = "adminNarrator";
             this.adminNarrator.Size = new System.Drawing.Size(35, 13);
             this.adminNarrator.TabIndex = 9;
@@ -298,7 +312,7 @@
             // adminSubmitButton
             // 
             this.adminSubmitButton.Enabled = false;
-            this.adminSubmitButton.Location = new System.Drawing.Point(627, 237);
+            this.adminSubmitButton.Location = new System.Drawing.Point(100, 126);
             this.adminSubmitButton.Name = "adminSubmitButton";
             this.adminSubmitButton.Size = new System.Drawing.Size(75, 23);
             this.adminSubmitButton.TabIndex = 8;
@@ -375,6 +389,7 @@
             // 
             // devTab
             // 
+            this.devTab.Controls.Add(this.devDeleteButton);
             this.devTab.Controls.Add(this.devNarrator);
             this.devTab.Controls.Add(this.devSubmitButton);
             this.devTab.Controls.Add(this.devSearchButton);
@@ -393,6 +408,98 @@
             this.devTab.TabIndex = 3;
             this.devTab.Text = "Developer Solution";
             this.devTab.UseVisualStyleBackColor = true;
+            // 
+            // devDeleteButton
+            // 
+            this.devDeleteButton.Enabled = false;
+            this.devDeleteButton.Location = new System.Drawing.Point(107, 178);
+            this.devDeleteButton.Name = "devDeleteButton";
+            this.devDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.devDeleteButton.TabIndex = 12;
+            this.devDeleteButton.Text = "Delete";
+            this.devDeleteButton.UseVisualStyleBackColor = true;
+            this.devDeleteButton.Click += new System.EventHandler(this.devDeleteButton_Click);
+            // 
+            // devNarrator
+            // 
+            this.devNarrator.AutoSize = true;
+            this.devNarrator.Location = new System.Drawing.Point(11, 217);
+            this.devNarrator.Name = "devNarrator";
+            this.devNarrator.Size = new System.Drawing.Size(35, 13);
+            this.devNarrator.TabIndex = 11;
+            this.devNarrator.Text = "label1";
+            // 
+            // devSubmitButton
+            // 
+            this.devSubmitButton.Enabled = false;
+            this.devSubmitButton.Location = new System.Drawing.Point(107, 148);
+            this.devSubmitButton.Name = "devSubmitButton";
+            this.devSubmitButton.Size = new System.Drawing.Size(75, 23);
+            this.devSubmitButton.TabIndex = 10;
+            this.devSubmitButton.Text = "Submit";
+            this.devSubmitButton.UseVisualStyleBackColor = true;
+            this.devSubmitButton.Click += new System.EventHandler(this.devSubmitButton_Click);
+            // 
+            // devSearchButton
+            // 
+            this.devSearchButton.Location = new System.Drawing.Point(107, 119);
+            this.devSearchButton.Name = "devSearchButton";
+            this.devSearchButton.Size = new System.Drawing.Size(75, 23);
+            this.devSearchButton.TabIndex = 9;
+            this.devSearchButton.Text = "Search";
+            this.devSearchButton.UseVisualStyleBackColor = true;
+            this.devSearchButton.Click += new System.EventHandler(this.devSearchButton_Click);
+            // 
+            // devVerifiedGridView
+            // 
+            this.devVerifiedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.devVerifiedGridView.Location = new System.Drawing.Point(214, 12);
+            this.devVerifiedGridView.Name = "devVerifiedGridView";
+            this.devVerifiedGridView.Size = new System.Drawing.Size(488, 218);
+            this.devVerifiedGridView.TabIndex = 8;
+            // 
+            // devEnterSolLabel
+            // 
+            this.devEnterSolLabel.AutoSize = true;
+            this.devEnterSolLabel.Location = new System.Drawing.Point(53, 99);
+            this.devEnterSolLabel.Name = "devEnterSolLabel";
+            this.devEnterSolLabel.Size = new System.Drawing.Size(48, 13);
+            this.devEnterSolLabel.TabIndex = 7;
+            this.devEnterSolLabel.Text = "Solution:";
+            // 
+            // devEnterSolutionBox
+            // 
+            this.devEnterSolutionBox.Location = new System.Drawing.Point(107, 92);
+            this.devEnterSolutionBox.Name = "devEnterSolutionBox";
+            this.devEnterSolutionBox.Size = new System.Drawing.Size(100, 20);
+            this.devEnterSolutionBox.TabIndex = 6;
+            // 
+            // devEnterDescLabel
+            // 
+            this.devEnterDescLabel.AutoSize = true;
+            this.devEnterDescLabel.Location = new System.Drawing.Point(38, 73);
+            this.devEnterDescLabel.Name = "devEnterDescLabel";
+            this.devEnterDescLabel.Size = new System.Drawing.Size(63, 13);
+            this.devEnterDescLabel.TabIndex = 5;
+            this.devEnterDescLabel.Text = "Description:";
+            // 
+            // devEnterSVLabel
+            // 
+            this.devEnterSVLabel.AutoSize = true;
+            this.devEnterSVLabel.Location = new System.Drawing.Point(11, 46);
+            this.devEnterSVLabel.Name = "devEnterSVLabel";
+            this.devEnterSVLabel.Size = new System.Drawing.Size(90, 13);
+            this.devEnterSVLabel.TabIndex = 4;
+            this.devEnterSVLabel.Text = "Software Version:";
+            // 
+            // devEnterECLabel
+            // 
+            this.devEnterECLabel.AutoSize = true;
+            this.devEnterECLabel.Location = new System.Drawing.Point(41, 19);
+            this.devEnterECLabel.Name = "devEnterECLabel";
+            this.devEnterECLabel.Size = new System.Drawing.Size(60, 13);
+            this.devEnterECLabel.TabIndex = 3;
+            this.devEnterECLabel.Text = "Error Code:";
             // 
             // devEnterDescriptionBox
             // 
@@ -415,86 +522,6 @@
             this.devEnterErrorCodeBox.Size = new System.Drawing.Size(100, 20);
             this.devEnterErrorCodeBox.TabIndex = 0;
             // 
-            // devEnterECLabel
-            // 
-            this.devEnterECLabel.AutoSize = true;
-            this.devEnterECLabel.Location = new System.Drawing.Point(41, 19);
-            this.devEnterECLabel.Name = "devEnterECLabel";
-            this.devEnterECLabel.Size = new System.Drawing.Size(60, 13);
-            this.devEnterECLabel.TabIndex = 3;
-            this.devEnterECLabel.Text = "Error Code:";
-            // 
-            // devEnterSVLabel
-            // 
-            this.devEnterSVLabel.AutoSize = true;
-            this.devEnterSVLabel.Location = new System.Drawing.Point(11, 46);
-            this.devEnterSVLabel.Name = "devEnterSVLabel";
-            this.devEnterSVLabel.Size = new System.Drawing.Size(90, 13);
-            this.devEnterSVLabel.TabIndex = 4;
-            this.devEnterSVLabel.Text = "Software Version:";
-            // 
-            // devEnterDescLabel
-            // 
-            this.devEnterDescLabel.AutoSize = true;
-            this.devEnterDescLabel.Location = new System.Drawing.Point(38, 73);
-            this.devEnterDescLabel.Name = "devEnterDescLabel";
-            this.devEnterDescLabel.Size = new System.Drawing.Size(63, 13);
-            this.devEnterDescLabel.TabIndex = 5;
-            this.devEnterDescLabel.Text = "Description:";
-            // 
-            // devEnterSolutionBox
-            // 
-            this.devEnterSolutionBox.Location = new System.Drawing.Point(107, 92);
-            this.devEnterSolutionBox.Name = "devEnterSolutionBox";
-            this.devEnterSolutionBox.Size = new System.Drawing.Size(100, 20);
-            this.devEnterSolutionBox.TabIndex = 6;
-            // 
-            // devEnterSolLabel
-            // 
-            this.devEnterSolLabel.AutoSize = true;
-            this.devEnterSolLabel.Location = new System.Drawing.Point(53, 99);
-            this.devEnterSolLabel.Name = "devEnterSolLabel";
-            this.devEnterSolLabel.Size = new System.Drawing.Size(48, 13);
-            this.devEnterSolLabel.TabIndex = 7;
-            this.devEnterSolLabel.Text = "Solution:";
-            // 
-            // devVerifiedGridView
-            // 
-            this.devVerifiedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.devVerifiedGridView.Location = new System.Drawing.Point(214, 12);
-            this.devVerifiedGridView.Name = "devVerifiedGridView";
-            this.devVerifiedGridView.Size = new System.Drawing.Size(488, 218);
-            this.devVerifiedGridView.TabIndex = 8;
-            // 
-            // devSearchButton
-            // 
-            this.devSearchButton.Location = new System.Drawing.Point(107, 119);
-            this.devSearchButton.Name = "devSearchButton";
-            this.devSearchButton.Size = new System.Drawing.Size(75, 23);
-            this.devSearchButton.TabIndex = 9;
-            this.devSearchButton.Text = "Search";
-            this.devSearchButton.UseVisualStyleBackColor = true;
-            this.devSearchButton.Click += new System.EventHandler(this.devSearchButton_Click);
-            // 
-            // devSubmitButton
-            // 
-            this.devSubmitButton.Enabled = false;
-            this.devSubmitButton.Location = new System.Drawing.Point(626, 237);
-            this.devSubmitButton.Name = "devSubmitButton";
-            this.devSubmitButton.Size = new System.Drawing.Size(75, 23);
-            this.devSubmitButton.TabIndex = 10;
-            this.devSubmitButton.Text = "Submit";
-            this.devSubmitButton.UseVisualStyleBackColor = true;
-            // 
-            // devNarrator
-            // 
-            this.devNarrator.AutoSize = true;
-            this.devNarrator.Location = new System.Drawing.Point(11, 145);
-            this.devNarrator.Name = "devNarrator";
-            this.devNarrator.Size = new System.Drawing.Size(35, 13);
-            this.devNarrator.TabIndex = 11;
-            this.devNarrator.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,7 +529,7 @@
             this.ClientSize = new System.Drawing.Size(753, 327);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "KnowledgeBase";
             this.tabControl1.ResumeLayout(false);
             this.userTab.ResumeLayout(false);
             this.userTab.PerformLayout();
@@ -564,6 +591,8 @@
         private System.Windows.Forms.Label devEnterSVLabel;
         private System.Windows.Forms.Label devEnterECLabel;
         private System.Windows.Forms.Label devNarrator;
+        private System.Windows.Forms.Button adminDeleteButton;
+        private System.Windows.Forms.Button devDeleteButton;
     }
 }
 
